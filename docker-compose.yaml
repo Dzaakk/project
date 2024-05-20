@@ -13,7 +13,7 @@ services:
         mode: replicated
         replicas: 1
 
-    authentication-serivce:
+    authentication-service:
       build:
         context: ./../authentication-service
         dockerfile: ./../authentication-service/authentication-service.dockerfile
@@ -39,3 +39,4 @@ services:
         POSTGRES_DB: users
       volumes:
         - ./db-data/postgres/:/var/lib/postgresql/data/
+        - ./users.sql:/docker-entrypoint-initdb.d/create_tables.sql
