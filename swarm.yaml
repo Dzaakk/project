@@ -11,7 +11,7 @@ services:
       - "443:443"
     volumes:
       - caddy_data:/data
-      - caddy_confdig:/config
+      - caddy_config:/config
 
   front-end:
     image: dzaakk/frontend-service:1.0.0
