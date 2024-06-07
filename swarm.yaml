@@ -14,7 +14,7 @@ services:
       - caddy_config:/config
 
   front-end:
-    image: dzaakk/front-end:1.0.1
+    image: dzaakk/front-end:1.0.4
     deploy:
       mode: replicated
       replicas: 1
