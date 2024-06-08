@@ -2,7 +2,7 @@ version: "3"
 
 services:
   caddy:
-    image: dzaakk/micro-caddy:1.0.0
+    image: dzaakk/micro-caddy:1.0.2
     deploy:
       mode: replicated
       replicas: 1
@@ -14,7 +14,7 @@ services:
       - caddy_config:/config
 
   front-end:
-    image: dzaakk/front-end:1.0.4
+    image: dzaakk/front-end:1.0.1
     deploy:
       mode: replicated
       replicas: 1
