@@ -1,2 +1,5 @@
 /db-data
 *.sql
+caddy.production.dockerfile
+Caddyfile.production
+swarm.production.yaml
