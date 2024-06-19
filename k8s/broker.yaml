@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: broker-service
-          image: "dzaakk/broker-service:1.01"
+          image: "dzaakk/broker-service:1.0.1"
           resources:
             requests:
               memory: "64Mi"
@@ -32,7 +32,7 @@ metadata:
   name: broker-service
 spec:
   selector:
-    name: broker-service
+    app: broker-service
   ports:
     - protocol: TCP
       name: main-port
