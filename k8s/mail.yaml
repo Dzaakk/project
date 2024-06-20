@@ -24,7 +24,7 @@ spec:
               cpu: "500m"
           env:
             - name: MAIL_DOMAIN
-              value: "localhost"
+              value: ""
             - name: MAIL_HOST
               value: "mailhog"
             - name: MAIL_PORT
@@ -38,7 +38,7 @@ spec:
             - name: FROM_NAME
               value: "John Smith"
             - name: FROM_ADDRESS
-              values: "john.smith@example.com"
+              value: "john.smith@example.com"
           ports:
             - containerPort: 80
 
