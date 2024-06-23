@@ -1,9 +1,9 @@
-apiVersion: networking.k8s.io.v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: my-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-traget: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
     - host: front-end.info
@@ -23,6 +23,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: broker-service.info
+                name: broker-service
                 port:
                   number: 8080
